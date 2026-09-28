@@ -1,0 +1,32 @@
+{
+  "name": "moon-letter",
+  "version": "0.1.0",
+  "description": "A private-by-default Chuseok moon letter composer with a fragment-only share link.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Chuseok project contributors",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5177",
+    "preview": "vite preview --host 0.0.0.0 --port 5177",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "build": "vite build",
+    "check": "npm run lint && npm run typecheck && npm run test && npm run build && npm audit --audit-level=moderate"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.63.0",
+    "eslint": "10.11.0",
+    "happy-dom": "20.14.5",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.70.1",
+    "vite": "8.3.1",
+    "vitest": "5.0.2"
+  }
+}
